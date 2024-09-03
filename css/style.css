@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: hsl(0, 0%, 8%);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+main {
+  background-color: hsl(0, 0%, 12%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 1.5em 2.5em; /* Adjusted padding around the main content */
+  border-radius: 1em;
+  width: 100%; /* Ensures full width on smaller screens */
+  max-width: 350px; /* Sets a maximum width for the card */
+  margin: 0 auto; /* Centers the main container on the page */
+  box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+figure {
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center;
+  width: 100%; /* Ensures the figure takes full width of its container */
+  margin: 0 auto; /* Centers the figure within the main container */
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 50%; /* Ensures the image is 50% of the container width */
+  display: block; /* Removes any extra inline space */
+  max-width: 6.25em; /* Optional: Set a maximum width for better control */
+  margin: 0 auto; /* Centers the image within the figure */
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; /* Centers text alignment */
+}
+
+h1 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 1.2em;
+}
+
+h1,
+q {
+  color: hsl(0, 0%, 100%);
+}
+
+nav {
+  width: 100%; /* Ensure nav takes full width of main */
+}
+
+ul {
+  width: 100%; /* Ensure ul takes full width of nav */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+li {
+  background-color: hsl(0, 0%, 20%);
+  list-style: none;
+  margin-bottom: 1em; /* Adds spacing between list items */
+  border-radius: 0.5em;
+  width: 100%; /* Expand to full width of parent container */
+  box-sizing: border-box; /* Includes padding and border in width calculation */
+}
+
+a {
+  text-decoration: none; /* Removes underline */
+  color: hsl(0, 0%, 100%); /* Changes text color to white */
+  display: block; /* Ensures the link takes up the full width of the list item */
+  padding: 1em; /* Adds padding for better click area */
+  text-align: center; /* Centers text inside the button */
+  font-size: 0.8em;
+  font-weight: 600;
+  width: 100%; /* Make the link fill the li element */
+}
+
+q {
+  font-size: 0.8em;
+  margin-top: 2em;
+  margin-bottom: 1.6em;
+}
+
+.location {
+  color: hsl(75, 94%, 57%);
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-top: 0.5em;
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 1em;
+  }
+
+  main {
+    padding: 1.5em 2.5em; /* Adjust padding on smaller screens */
+    width: 100%; /* Ensure the card takes the full width on smaller screens */
+  }
+
+  a {
+    padding: 0.8em; /* Adjust padding for smaller screens */
+    font-size: 0.8em; /* Slightly smaller font size for smaller screens */
+  }
+
+  .profile-img {
+    max-width: 4.5em; /* Adjust image size on smaller screens */
+  }
+}
